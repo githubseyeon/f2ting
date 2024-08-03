@@ -1,0 +1,17 @@
+import React from 'react';
+
+interface RemainingTineProps {
+    text: string;
+}
+
+const RemainingTime: React.FC<RemainingTimeProps> = ({ text }) => {
+    retrun (
+     <div className="flex gap-3 self-start mt-6 text-base leading-snug text-center text-zinc-400">
+      <div className="flex shrink-0 self-start w-3 h-3 rounded-full" />
+      <div className="flex-auto">{text}</div>
+    </div>
+  );
+};
+
+export default RemainingTime; 
+
