@@ -1,0 +1,44 @@
+/* receiptscan.module.css */
+.background {
+    background: var(--brand-primary-dark-green, #105d38);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    max-width: 375px; /* 최대 너비 제한 */
+    max-height: 812px; /* 최대 높이 제한 */
+    left: 50%; /* Move the left side to the center of the viewport */
+    top: 50%; /* Move the top side to the center of the viewport */
+    transform: translate(-50%, -50%); /* Offset the element by half of its width and height to center it */
+  }
+  .creamText {
+    color: #f5f5dc;
+  }
+  
+  .lightGrayText {
+    color: #d3d3d3;
+  }
+  
+  .goldenHighlight {
+    color: #ffd700;
+  }
+  
+  .whiteText {
+    color: white;
+  }
+  
+  .whiteButton {
+    background-color: white;
+    color: #105d38;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whiteButton:hover {
+    background-color: #f5f5dc;
+  }
+
+  
+  
