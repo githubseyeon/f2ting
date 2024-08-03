@@ -1,0 +1,223 @@
+.div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+  .div2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .div3 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    position: relative;
+    aspect-ratio: 2.57;
+    width: 54px;
+    align-items: center;
+    justify-content: center;
+  }
+  .img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .img2 {
+    aspect-ratio: 2.56;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 32px;
+  }
+  .div4 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 0px 0px;
+    position: relative;
+    aspect-ratio: 5.5;
+    width: 66px;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+  }
+  .img3 {
+    aspect-ratio: 5.56;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .div5 {
+    display: flex;
+    margin-top: 31px;
+    gap: 20px;
+  }
+  .div6 {
+    color: var(--Green-Primary, #5db075);
+    margin: auto 0;
+    font: 500 16px Inter, sans-serif;
+  }
+  .div7 {
+    color: var(--Black, #000);
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: auto;
+    font: 600 30px Inter, sans-serif;
+  }
+  .img4 {
+    aspect-ratio: 1.37;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    align-self: center;
+    margin-top: 41px;
+    max-width: 308px;
+  }
+  .div8 {
+    color: var(--Black, #000);
+    margin-top: 38px;
+    font: 500 24px Inter, sans-serif;
+  }
+  .div9 {
+    display: flex;
+    margin-top: 36px;
+    width: 100%;
+    gap: 20px;
+    color: var(--Black, #000);
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+  }
+  .div10 {
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .div11 {
+    background-color: var(--Green-Primary, #5db075);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+  .div12 {
+    font-family: Inter, sans-serif;
+  }
+  .div13 {
+    text-align: right;
+    font: 400 24px Inter, sans-serif;
+  }
+  .div14 {
+    background-color: #e8e8e8;
+    margin-top: 10px;
+    height: 1px;
+    width: 100%;
+    border: 1px solid rgba(232, 232, 232, 1);
+  }
+  .div15 {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    gap: 20px;
+    color: var(--Black, #000);
+    justify-content: space-between;
+  }
+  .div16 {
+    align-self: start;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .div17 {
+    background-color: rgba(255, 176, 176, 1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+  .div18 {
+    font-family: Inter, sans-serif;
+  }
+  .div19 {
+    text-align: right;
+    font: 400 24px Inter, sans-serif;
+  }
+  .div20 {
+    background-color: #e8e8e8;
+    margin-top: 10px;
+    height: 1px;
+    border: 1px solid rgba(232, 232, 232, 1);
+  }
+  .div21 {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    gap: 20px;
+    color: var(--Black, #000);
+    justify-content: space-between;
+  }
+  .div22 {
+    align-self: start;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .div23 {
+    background-color: rgba(253, 255, 144, 1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+  .div24 {
+    font-family: Inter, sans-serif;
+  }
+  .div25 {
+    text-align: right;
+    font: 400 24px Inter, sans-serif;
+  }
+  .div26 {
+    background-color: #e8e8e8;
+    margin-top: 10px;
+    height: 1px;
+    border: 1px solid rgba(232, 232, 232, 1);
+  }
+  .div27 {
+    display: flex;
+    margin-top: 16px;
+    width: 100%;
+    gap: 20px;
+    color: var(--Black, #000);
+    justify-content: space-between;
+  }
+  .div28 {
+    align-self: start;
+    display: flex;
+    gap: 16px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .div29 {
+    background-color: rgba(171, 205, 255, 1);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+  .div30 {
+    font-family: Inter, sans-serif;
+  }
+  .div31 {
+    text-align: right;
+    font: 400 24px Inter, sans-serif;
+  }
+  .div32 {
+    background-color: #e8e8e8;
+    margin-top: 10px;
+    height: 1px;
+    border: 1px solid rgba(232, 232, 232, 1);
+  }

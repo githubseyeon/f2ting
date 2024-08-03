@@ -1,0 +1,116 @@
+.div {
+    border-radius: 20px;
+    background-color: rgba(93, 176, 117, 1);
+    display: flex;
+    margin-top: 30px;
+    align-self: stretch;
+    gap: 20px;
+    color: var(--Neutral-White, #fff);
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+  }
+  .div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+    align-self: center;
+  }
+  .div3 {
+    letter-spacing: 0.48Px;
+    text-transform: uppercase;
+    margin-top: 7px;
+    font: 500 12px Rubik, sans-serif;
+  }
+  .div4 {
+    margin-top: 11px;
+    font: 700 16px Rubik, sans-serif;
+  }
+  .div5 {
+    align-self: stretch;
+    width: 1px;
+    height: 69px;
+  }
+  .div6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .img2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+  }
+  .div7 {
+    letter-spacing: 0.48Px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    font: 500 12px Rubik, sans-serif;
+  }
+  .div8 {
+    margin-top: 11px;
+    font: 700 16px Rubik, sans-serif;
+  }
+
+  .profilediv {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    position: relative;
+    background-color: var(--Brand-Primary-Default, #e5f5eb);
+    margin-top: 24px;
+    width: 90%;
+    font-weight: 500;
+    align-self: center;
+    padding: 16px 15px 44px 50px;
+  }
+
+  .profilediv2 {
+    position: right;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: var(--Neutral-White, #fff);
+    align-self: end;
+    display: flex;
+    gap: 4px;
+    font-size: 12px;
+    color: var(--Neutral-Black, #0c092a);
+    line-height: 150%;
+    padding: 8px 12px 10px 10px;
+    border: 2px solid rgba(239, 238, 252, 1);
+  }
+
+  .profilediv3 {
+    font-family: Rubik, sans-serif;
+  }
+  .profileimg2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 16px;
+    align-self: center;
+  }
+  .profilediv4 {
+    position: relative;
+    color: #105d38;
+    text-align: center;
+    align-self: center;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font: 20px/28px Rubik, sans-serif;
+  }
+  .profileimg3 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 148px;
+    border-radius: 0px 0px 0px 0px;
+    align-self: center;
+    margin-top: 26px;
+    max-width: 100%;
+  }
