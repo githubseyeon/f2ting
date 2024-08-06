@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "empyrean-yeti-431111-b2",
+  "private_key_id": "dd7c50facd1b070ed89ec18ccc66a3581a945a57",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGWpYBPTPGOaVQ\n/7NkIEt4lgkEJRKRP/rDyfNI/JvOgQTWNCz4qu4ghTTtRwqyC/2eKpD3NjcbzWM/\n3KYTLnwufG1ANWJHzP3xISs1i+Vih44RMfj7iztOHweDDC0vkDnE5S7cbtFr6UpJ\nApiRDyv5tu0lkydUIqzeHCnME5DfufQGtMvZfmblIF6MTuSQlsxqg+Sorejdx5RF\n+fZbDR8ZvDiRYulrHGDAqtpSdjn45NWOViGfo2wROwLu3s3ivohMrYA2x3mBf5hI\nSH3m2RA1UGPYLxI4jXfmA71ZQeChBGIAdMzW9Mt6skFwUqHPLICqq3+hr96Y0ZX/\n1RwtoHZDAgMBAAECggEAPQO9c9kfNYEi/LUDOjAC9y9zy44Z1YtQOGzFRPTLeqzO\nT5PSJ5Xw1RkUrE53mEg+9inS2PCY6Bj4SDs37NuWQHhu5NrnBf4lOUjCMWD8qR/Y\nkCqGk94C2qeJ2IJk3eYoFwyGqzD9g4vKGYZOZwS7Or/N2AqZhPR7p4ETTF7SaDcR\nAbQAKxNXH22ORwefIsZ9do/ck1ZhvmAY/LHMsxo5frmil3U2W0g/e945bYRk+ZDX\n3bom1lulQL0QYUUIh0aUc4qpfZmoObq2eDnr52Dp2htMDVEb27dftMkvgpKOk2yt\nhiMSFZmuVxm2WPES8xmQnIQJwvYgTg61bSwpcsDvPQKBgQDp9M4IpgBJqcp0lDNF\nOdNnsmG18h80xJD67McDY/Yd3cCSJr9OFQlu36QMHn/spqwT+TXHbW/218WO3jEN\nX+exAdt2oSkxsSZODCxLFIQ3kFSZ7DHN2bdeeXxnFvpcE/UhqIjpP/KZtl8yUEH+\nfy+G0KADRwm4H715wgGAYEvoPQKBgQDZCwZj6+9o4ywjjOtSGafG6vmgmWBVRHk3\n4coL1j7daW4bJF+IAKK5CbxufvaLHRrwwEUjxOwdc8rwkMp6pSZZ50rxDbOxWrvk\noHAVrJl3npz9oS3YBVHuk49AN4xPrhrTrsrP99of04yvwx++lKzoZxTVuK2dHwZ9\nuyyzix1AfwKBgDBdNyp6hpyzyPKIoICzD4zkR2bBgsn5yK7Wu91rkLlj2idcczfF\nCYouGU+YDoHxgqkuX3u2l+rDeEesjx9gsBjbdW70qftnz69avN1YhGyoHZUkSrdv\nRoT1QE5fZaobRhWLLaJqYdB87vkLtljSGhUYk7uZt9ykUxsUjBLp1UdRAoGBAJwn\nKXbUdY/h+YyuQ1PzL1mXDvgzwTI3rHq/EO2JO/tycgxHFBA2XNyCG7bn05ts2kgi\nHNxKPpJGD9kaYwLwNPJzzOA3OnQ8Unh/0YRWhKeiT1LPFruXwEXElkjebi2ZlqV7\n2WDc8mr5efuuh/VG5EvkdgH597bWboYhF10plmcjAoGAWGcu7DiYJzC/4rtrktpn\n2v6BwZ4llv9cb3yDK01BjSXcsKnmsjnFKbKEwLCaz9rxkVNkkH+uTtj6Hjdr+k/C\nzr3JsoLpY9zAdqUYeHpVK8BxB5AGMPvN5zVBrf6I3IbEDxA1fxF/XjvQ4FT5VsWo\nzciv2i+JlUyy4drxsOgoBDo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jehou2024@empyrean-yeti-431111-b2.iam.gserviceaccount.com",
+  "client_id": "108382492412816191233",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jehou2024%40empyrean-yeti-431111-b2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
