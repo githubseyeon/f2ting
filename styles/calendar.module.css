@@ -1,133 +1,203 @@
 .div {
-    background-color: var(--Green-Primary, #5db075);
-    align-self: stretch;
-    flex-direction: column;
-    padding: 12px 17px 19px;
-  }
-  .div2 {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  }
-  .img {
-    aspect-ratio: 2.56;
-    object-fit: auto;
-    object-position: center;
-    width: 54px;
-    border-radius: 32px;
-  }
-  .img2 {
-    aspect-ratio: 5.56;
-    object-fit: auto;
-    object-position: center;
-    width: 66px;
-    border-radius: 0px 0px 0px 0px;
-    margin: auto 0;
-  }
-  .div3 {
-    color: var(--White, #fff);
-    text-align: center;
-    align-self: center;
-    margin-top: 34px;
-    font: 600 30px Inter, sans-serif;
-  }
-  .div4 {
-    display: flex;
-    margin-top: 43px;
-    gap: 20px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: 400;
-    white-space: nowrap;
-    text-align: center;
-    justify-content: space-between;
-  }
-  .div5 {
-    font-family: Inter, sans-serif;
-  }
-  .div6 {
-    font-family: Inter, sans-serif;
-  }
-  .div7 {
-    font-family: Inter, sans-serif;
-  }
-  .div8 {
-    font-family: Inter, sans-serif;
-  }
-  .div9 {
-    font-family: Inter, sans-serif;
-  }
-  .div10 {
-    font-family: Inter, sans-serif;
-  }
-  .div11 {
-    font-family: Inter, sans-serif;
-  }
+  background-color: var(--Green-Primary, #5db075);
+  align-self: stretch;
+  flex-direction: column;
+  padding: 12px 17px 19px;
+}
 
-.calendardiv {
-        display: flex;
-        margin-top: 47px;
-        gap: 20px;
-        font-size: 14px;
-        font-weight: 400;
-        text-align: center;
-        align-self: stretch;
-        justify-content: space-between;
-        padding: 0 20px;
+.div2 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.img {
+  aspect-ratio: 2.56;
+  object-fit: auto;
+  object-position: center;
+  width: 54px;
+  border-radius: 32px;
+}
+
+.img2 {
+  aspect-ratio: 5.56;
+  object-fit: auto;
+  object-position: center;
+  width: 66px;
+  border-radius: 0px 0px 0px 0px;
+  margin: auto 0;
+}
+
+.div3 {
+  color: var(--White, #fff);
+  text-align: center;
+  align-self: center;
+  margin-top: 34px;
+  font: 600 30px Inter, sans-serif;
+}
+
+.div4 {
+  display: flex;
+  margin-top: 43px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.div5, .div6, .div7, .div8, .div9, .div10, .div11 {
+  font-family: Inter, sans-serif;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 16px; /* 간격을 늘리기 위한 설정 */
+  margin-top: 47px;
+  padding: 0px 0px 0px 0px;
+  width: 100%
+}
+
+.day {
+  width: 100%; /* 날짜가 부모 요소의 너비를 가득 채우도록 설정 */
+  height: 40px; /* 날짜의 높이를 설정 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--Black, #000);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.completed {
+  color: var(--Green-Primary, #5db075);
+  font-weight: 600; /* 강조할 때 굵기를 증가 */
+}
+
+.challenges {
+  margin-top: 20px;
+}
+
+
+/* .chaldiv {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  gap: 20px;
+  color: var(--Black, #000);
+  justify-content: space-between;
+  padding: 20px 40px 30px 0px;
+}
+.chaldiv2 {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.chaldiv3a {
+  background-color: var(--Green-Primary, #5db075);
+  border-radius: 50%;
+  width: 16px;
+}
+.chaldiv3b {
+  background-color: rgba(255, 176, 176, 1);
+  border-radius: 50%;
+  width: 16px;
+}
+.chaldiv3c {
+  background-color: rgba(253, 255, 144, 1);
+  border-radius: 50%;
+  width: 16px;
+}
+.chaldiv3d {
+  background-color: rgba(171, 205, 255, 1);
+  border-radius: 50%;
+  width: 16px;
+}
+.chaldiv4 {
+  font-family: Inter, sans-serif;
+}
+.div5 {
+  text-align: right;
+  margin: auto 0;
+  font: 400 14px Inter, sans-serif;
+}
+
+.chalLine {
+  background-color: #e0d8d8;
+  margin-top: 16px;
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgba(232, 232, 232, 1);  
+} */
+
+.challenges {
+  margin-top: 20px;
 }
 
 .chaldiv {
-    display: flex;
-    margin-top: 10px;
-    width: 100%;
-    gap: 20px;
-    color: var(--Black, #000);
-    justify-content: space-between;
-    padding: 20px 40px 30px 0px;
-  }
-  .chaldiv2 {
-    display: flex;
-    gap: 16px;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  .chaldiv3a {
-    background-color: var(--Green-Primary, #5db075);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  }
-  .chaldiv3b {
-    background-color: rgba(255, 176, 176, 1);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  }
-  .chaldiv3c {
-    background-color: rgba(253, 255, 144, 1);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  }
-  .chaldiv3d {
-    background-color: rgba(171, 205, 255, 1);
-    border-radius: 50%;
-    width: 16px;
-    height: 16px;
-  }
-  .chaldiv4 {
-    font-family: Inter, sans-serif;
-  }
-  .div5 {
-    text-align: right;
-    margin: auto 0;
-    font: 400 14px Inter, sans-serif;
-  }
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  gap: 20px;
+  color: var(--Black, #000);
+  justify-content: space-between;
+  padding: 20px 40px 30px 0px;
+}
+
+.chaldiv2 {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.chaldiv3a {
+  background-color: var(--Green-Primary, #5db075);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.chaldiv3b {
+  background-color: rgba(255, 176, 176, 1);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.chaldiv3c {
+  background-color: rgba(253, 255, 144, 1);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.chaldiv3d {
+  background-color: rgba(171, 205, 255, 1);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.chaldiv4 {
+  font-family: Inter, sans-serif;
+}
+
+.chaldiv5 {
+  text-align: right;
+  margin: auto 0;
+  font: 400 14px Inter, sans-serif;
+}
 
 .chalLine {
-    background-color: #e0d8d8;
-    margin-top: 16px;
-    width: 100%;
-    height: 1px;
-    border: 1px solid rgba(232, 232, 232, 1);  
+  background-color: #e0d8d8;
+  margin-top: 16px;
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgba(232, 232, 232, 1);
 }
