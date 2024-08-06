@@ -1,6 +1,6 @@
 "use client";
 
-import Layout from '.././layout';
+import Layout from '../layout';
 import '../../styles/global.css';
 import styles from '../../styles/home.module.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -140,13 +140,13 @@ const Home = () => {
           interval={5000}
           >
           <div>
-            <img src='/images/image1.png' alt='1' />
+            <img src='/images/ad1.png' alt='1' />
           </div>
           <div>
-            <img src='/images/image2.png' alt='2' />
+            <img src='/images/ad2.png' alt='2' />
           </div>
           <div>
-            <img src='/images/image3.png' alt='3' />
+            <img src='/images/ad3.png' alt='3' />
           </div>
         </Carousel>
     </Layout>
