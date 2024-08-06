@@ -1,13 +1,27 @@
-.img {
-    aspect-ratio: 8.33;
-    object-fit: auto;
-    width: 100%;
-    object-position: center;
-    border-radius: 0px 0px 0px 0px;
-    margin-top: 27px;
+.header {
+  display: flex;
+  justify-content: space-between; /* This ensures that items are spaced between the left and right edges */
+  align-items: center; /* Vertically centers items */
+  padding: 0 20px; /* Optional: Adds horizontal padding */
+  margin-top: 27px; /* Keeps the margin-top */
+  width: 98%;
+}
+
+.logo {
+  height: 60px; /* Adjust height as needed */
+}
+
+.settings {
+  height: 60px; /* Adjust height as needed */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) { /* You can adjust the max-width as per your design */
+  .header {
+      padding: 0 10px; /* Adjust padding for smaller screens */
   }
-  @media (max-width: 640px) {
-    .img {
-      width: 337px;
-    }
+
+  .logo, .settings {
+      height: 45px; /* Adjust height for smaller screens */
   }
+}
