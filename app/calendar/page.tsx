@@ -1,17 +1,41 @@
+"use client";
+
+import React, { useEffect, useState } from 'react';
 import Layout from '../layout';
 import styles from '../../styles/calendar.module.css';
+import axios from 'axios';
 
-export const metadata = {
-  title: 'Calendar',
-}
 
 const Calendar = () => {
+  const [completedDates, setCompletedDates] = useState<number[]>([]);
+  const [challenges, setChallenges] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const challengeResponse = await axios.get('/api/challenges');
+        const challengeData = challengeResponse.data;
+        // 예: 날짜를 기반으로 챌린지를 필터링하거나 변환합니다.
+        const dates = challengeData.map((challenge: any) => new Date(challenge.completedDate).getDate());
+        setCompletedDates(dates);
+
+        const rewardResponse = await axios.get('/api/rewards');
+        setChallenges(rewardResponse.data);
+      } catch (error) {
+        console.error('Failed to fetch data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const days = Array.from({ length: 34 }, (_, i) => i >= 3 ? i - 2 : null);
+
   return (
     <Layout>
       <div className={styles.div}>
-        <div className={styles.div2}>
-        </div>
-        <div className={styles.div3}>March</div>
+        <div className={styles.div2}></div>
+        <div className={styles.div3}>August</div>
         <div className={styles.div4}>
           <div className={styles.div5}>Mo</div>
           <div className={styles.div6}>Tu</div>
@@ -22,50 +46,15 @@ const Calendar = () => {
           <div className={styles.div11}>Su</div>
         </div>
       </div>
-      <div className={styles.calendardiv}>
-        <div color='var(--Neutral-Gray-4, #8f92a1)'>29</div>
-        <div color='var(--Neutral-Gray-4, #8f92a1)'>30</div>
-        <div color='var(--Neutral-Gray-4, #8f92a1)'>31</div>
-        <div color='var(--Black, #000)'>1</div>
-        <div color='var(--Black, #000)'>2</div>
-        <div color='var(--Black, #000)'>3</div>
-        <div color='var(--Black, #000)'>4</div>
-      </div>
-      <div className={styles.calendardiv}>
-        <div color='var(--Black, #000)'>5</div>
-        <div color='var(--Black, #000)'>6</div>
-        <div color='var(--Black, #000)'>7</div>
-        <div color='var(--Black, #000)'>8</div>
-        <div color='var(--Black, #000)'>9</div>
-        <div color='var(--Black, #000)'>10</div>
-        <div color='var(--Black, #000)'>11</div>
-      </div>
-      <div className={styles.calendardiv}>
-        <div color='var(--Black, #000)'>12</div>
-        <div color='var(--Black, #000)'>13</div>
-        <div color='var(--Black, #000)'>14</div>
-        <div color='var(--Black, #000)'>15</div>
-        <div color='var(--Black, #000)'>16</div>
-        <div color='var(--Black, #000)'>17</div>
-        <div color='var(--Black, #000)'>18</div>
-      </div>
-      <div className={styles.calendardiv}>
-        <div color='var(--Black, #000)'>19</div>
-        <div color='var(--Black, #000)'>20</div>
-        <div color='var(--Black, #000)'>21</div>
-        <div color='var(--Black, #000)'>22</div>
-        <div color='var(--Black, #000)'>23</div>
-        <div color='var(--Black, #000)'>24</div>
-        <div color='var(--Black, #000)'>25</div>
-      </div>
-      <div className={styles.calendardiv}>
-        <div color='var(--Black, #000)'>26</div>
-        <div color='var(--Black, #000)'>27</div>
-        <div color='var(--Black, #000)'>28</div>
-        <div color='var(--Black, #000)'>29</div>
-        <div color='var(--Black, #000)'>30</div>
-        <div color='var(--Black, #000)'>31</div>
-        <div color='var(--Neutral-Gray-4, #8f92a1)'>1</div>
+      <div className={styles.calendarGrid}>
+        {days.map(day => (
+          <div
+            key={day}
+            className={`${styles.day} ${completedDates.includes(day) ? styles.completed : ''}`}
+          >
+            {day}
+          </div>
+        ))}
       </div>
       <div>
         <div className={styles.chaldiv}>
@@ -107,6 +96,23 @@ const Calendar = () => {
         </div>
       </div>
       <div className={styles.chalLine}></div>
+
+      <div className={styles.challenges}>
+        {challenges.map((challenge, index) => (
+          <React.Fragment key={index}>
+            <div className={styles.chaldiv}>
+              <div className={styles.chaldiv2}>
+                <div
+                  className={styles[`chaldiv3${challenge.type}`]}
+                />
+                <div className={styles.chaldiv4}>{challenge.name}</div>
+              </div>
+              <div className={styles.chaldiv5}>{challenge.duration}</div>
+            </div>
+            {index < challenges.length - 1 && <div className={styles.chalLine}></div>}
+          </React.Fragment>
+        ))}
+      </div>    
     </Layout>
   );
 };
