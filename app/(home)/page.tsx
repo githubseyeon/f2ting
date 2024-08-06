@@ -1,10 +1,11 @@
 "use client";
 
-import Layout from '.././layout';
+import Layout from '../layout';
 import '../../styles/global.css';
 import styles from '../../styles/home.module.css';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
+import Link from 'next/link';
 
 import React from 'react';
 // import { useState, useEffect } from 'react';
@@ -114,20 +115,28 @@ const Home = () => {
       <div className={styles.challengeSeemore}>See More</div>
       <div className={styles.challengeContainer}>
         <div className={styles.challengeSmallerContainer}>
-          <div>영수증</div>
-          <div>🧾</div>
+            <Link href='/receipt'>  
+              <div>영수증</div>
+              <div>🧾</div>
+            </Link>  
         </div>
         <div className={styles.challengeSmallerContainer}>
-          <div>기상</div>
-          <div>🛏️</div>
+          <Link href='/wakeup'>
+            <div>기상</div>
+            <div>🛏️</div>
+          </Link>
         </div>
         <div className={styles.challengeSmallerContainer}>
-          <div>식단</div>      
-          <div>🍽️</div>
+          <Link href='/eat'>
+            <div>식단</div>      
+            <div>🍽️</div>
+          </Link>
         </div>
         <div className={styles.challengeSmallerContainer}>
-          <div>운동</div>
-          <div>👟</div>
+          <Link href='/health'>
+            <div>운동</div>
+            <div>👟</div>
+          </Link>
         </div>
       </div>
       <div className={styles.premiumdiv}>Premium Service</div>
@@ -140,13 +149,13 @@ const Home = () => {
           interval={5000}
           >
           <div>
-            <img src='/images/image1.png' alt='1' />
+            <img src='/images/ad1.png' alt='1' />
           </div>
           <div>
-            <img src='/images/image2.png' alt='2' />
+            <img src='/images/ad2.png' alt='2' />
           </div>
           <div>
-            <img src='/images/image3.png' alt='3' />
+            <img src='/images/ad3.png' alt='3' />
           </div>
         </Carousel>
     </Layout>
