@@ -1,3 +1,25 @@
+.container {
+  padding: 20px;
+  background-color: var(--White, #fff);
+}
+
+.dateContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--Black, #000);
+}
+
+.chartContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
 .div {
     display: flex;
     width: 100%;
@@ -110,13 +132,14 @@
   }
   .div13 {
     text-align: right;
+    margin-right: 25px;
     font: 400 24px Inter, sans-serif;
   }
   .div14 {
     background-color: #e8e8e8;
     margin-top: 10px;
     height: 1px;
-    width: 100%;
+    width: 96%;
     border: 1px solid rgba(232, 232, 232, 1);
   }
   .div15 {
@@ -145,12 +168,14 @@
   }
   .div19 {
     text-align: right;
+    margin-right: 25px;
     font: 400 24px Inter, sans-serif;
   }
   .div20 {
     background-color: #e8e8e8;
     margin-top: 10px;
     height: 1px;
+    width: 96%;
     border: 1px solid rgba(232, 232, 232, 1);
   }
   .div21 {
@@ -179,12 +204,14 @@
   }
   .div25 {
     text-align: right;
+    margin-right: 25px;
     font: 400 24px Inter, sans-serif;
   }
   .div26 {
     background-color: #e8e8e8;
     margin-top: 10px;
     height: 1px;
+    width: 96%;
     border: 1px solid rgba(232, 232, 232, 1);
   }
   .div27 {
@@ -213,11 +240,13 @@
   }
   .div31 {
     text-align: right;
+    margin-right: 25px;
     font: 400 24px Inter, sans-serif;
   }
   .div32 {
     background-color: #e8e8e8;
     margin-top: 10px;
     height: 1px;
+    width: 96%;
     border: 1px solid rgba(232, 232, 232, 1);
   }
