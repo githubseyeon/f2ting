@@ -1,0 +1,13 @@
+.react-calendar {
+    width: 1000px; /* 캘린더의 너비 고정 */
+    height: auto; /* 높이 자동 조정 */
+    max-width: 100%; /* 최대 너비를 100%로 제한 */
+  }
+  
+  /* 더 작은 화면에서 캘린더가 너비를 벗어나지 않도록 조정 */
+  @media (max-width: 360px) {
+    .react-calendar {
+      width: 100%; /* 작은 화면에서는 너비를 100%로 조정 */
+    }
+  }
+  
