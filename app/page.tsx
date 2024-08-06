@@ -25,11 +25,9 @@ const HomePage = () => {
         <h2>이미지 업로드</h2>
         <ImageUploader />
       </div>
+      <SecondNavigation/>
 
-      {/* 추가된 텍스트와 버튼 요소 */}
-      <div className={styles.button}>
-          <button className={styles.rectangle}>건강</button>
-        </div>
+      
       
     </div>
   );
