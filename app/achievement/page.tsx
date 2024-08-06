@@ -1,14 +1,80 @@
+"use client";
+
 import Layout from '../layout';
 import styles from '../../styles/achievement.module.css';
-import Link from 'next/link';
+import { Bar } from 'react-chartjs-2';
+import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js';
+import { useEffect, useState } from 'react';
 
-export const metadata = {
-  title: 'Achievement',
-}
+ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale);
 
 const Achievement = () => {
+  const [data, setData] = useState<any[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch data from /api/challenge endpoint
+        const response = await fetch('/api/challenge');
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Failed to fetch challenge data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const chartData = {
+    labels: data.map(item => item.challenge_name), // Assume `challenge_name` is a column in your DB
+    datasets: [
+      {
+        label: 'Completed Count',
+        data: data.map(item => item.completed_count), // Assume `completed_count` is a column in your DB
+        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1,
+      }
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top' as const,
+      },
+      tooltip: {
+        callbacks: {
+          label: (context: any) => `${context.dataset.label}: ${context.raw}`,
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          autoSkip: false,
+        },
+      },
+    },
+  };
+
+  const today = new Date();
+  const month = today.getMonth() + 1; // Months are 0-based
+  const day = today.getDate();
+
   return (
     <Layout>
+      <div className={styles.container}>
+        <div className={styles.dateContainer}>
+          <h1 className={styles.date}>{month}월 {day}일</h1>
+        </div>
+        <div className={styles.chartContainer}>
+          <Bar data={chartData} options={options} />
+        </div>
+      </div>
+
       <div className={styles.div}>
         <div className={styles.div2}>
           <div className={styles.div3}>
@@ -17,9 +83,6 @@ const Achievement = () => {
           </div>
         </div>
         <div className={styles.div5}>
-          <Link href="/">
-            <div className={styles.div6}>Back</div>
-          </Link>
           <div className={styles.div7}>3월 7일</div>
         </div>
         <img
@@ -66,3 +129,4 @@ const Achievement = () => {
 };
 
 export default Achievement;
+
